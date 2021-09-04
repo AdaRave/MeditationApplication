@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="15dp"
+    tools:context=".SplashScreen">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/logo_mini" />
+
+    <TextView
+        android:id="@+id/text_hi"
+        style="@style/text_white"
+        android:textSize="26sp"
+        android:layout_below="@id/logo"
+        android:layout_height="wrap_content"
+        android:text="ПРИВЕТ" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:id="@+id/text_text"
+        android:textSize="15sp"
+        style="@style/text_white"
+        android:layout_below="@id/text_hi"
+        android:layout_height="wrap_content"
+        android:text="@string/onboarding_text" />
+
+    <Button
+        android:layout_marginTop="50dp"
+        android:onClick="buttonLogin"
+        android:id="@+id/login_button"
+        style="@style/button"
+        android:textAllCaps="false"
+        android:layout_below="@id/text_text"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button"
+        android:text="Войти в аккаунт" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/login_button"
+        style="@style/text_white"
+        android:layout_height="wrap_content"
+        android:text="Ещё нет аккаунта? Зарегистрируйтесь" />
+</RelativeLayout>

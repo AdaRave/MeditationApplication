@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    tools:context=".main.fragment.MainFragment">
+
+   <RelativeLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <TextView
+           android:id="@+id/textViewHi"
+           style="@style/text_white"
+           android:layout_height="wrap_content"
+           android:layout_marginTop="35dp"
+           android:fontFamily="@font/alegreya_bold"
+           android:text="С возвращением, Эмиль!"
+           android:textSize="30sp" />
+
+       <TextView
+           android:id="@+id/textView4"
+           style="@style/text_white"
+           android:layout_height="wrap_content"
+           android:layout_below="@id/textViewHi"
+           android:text="Каким ты себя чувствуешь сегодня?"
+           android:textSize="20sp" />
+
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_feelings"
+           android:orientation="horizontal"
+           android:layout_below="@id/textView4"
+           android:layout_width="match_parent"
+           android:scrollbars="horizontal"
+           android:layout_height="wrap_content">
+
+       </androidx.recyclerview.widget.RecyclerView>
+
+       <androidx.recyclerview.widget.RecyclerView
+           android:id="@+id/recycler_quotes"
+           android:orientation="vertical"
+           android:layout_below="@id/recycler_feelings"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_weight="1"
+           android:scrollbars="vertical">
+
+       </androidx.recyclerview.widget.RecyclerView>
+
+   </RelativeLayout>
+
+</FrameLayout>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="20dp"
+    app:cardCornerRadius="25dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_margin="30dp"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/alegreya_regular"
+            android:text="Заголовок блока"
+            android:textColor="@color/background"
+            android:textSize="25sp" />
+
+        <TextView
+            android:textColor="@color/background"
+            android:fontFamily="@font/alegreya_regular"
+            android:textSize="13sp"
+            android:layout_below="@id/title_text"
+            android:id="@+id/description_text"
+            android:layout_width="156dp"
+            android:layout_height="wrap_content"
+            android:text="Коротенькое описание блока с двумя строчками" />
+
+        <ImageView
+            android:id="@+id/image_quotes"
+            android:layout_width="166dp"
+            android:layout_height="111dp"
+            android:layout_alignParentEnd="true"
+            app:srcCompat="@drawable/post" />
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textAllCaps="false"
+            android:layout_below="@id/description_text"
+            android:id="@+id/button"
+            android:layout_width="138dp"
+            android:layout_height="39dp"
+            android:text="подробнее"
+            android:textSize="10dp"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:background="@drawable/button_dark"
+            />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>
